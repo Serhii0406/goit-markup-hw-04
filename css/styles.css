@@ -143,6 +143,13 @@ a:link {
    display: flex;
    padding-top: 200px;
    padding-bottom: 200px;
+   max-width: 1600px;
+
+   background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)),
+   url('../images/hero-bg-img.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
 }
 .hero-title {
     margin-top: 0;
@@ -221,7 +228,34 @@ a:link {
     display: flex;
     justify-content: center;
 }
+.description-item::before {
+    display: block;
+    content: '';
+    height: 120px;
+    width: 270px;
+    margin-bottom: 30px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--section-bgc-color);
 
+}
+.antenna::before {
+    background-image: url('../images/antenna.png');
+    background-size: 70px 70px;
+}
+.clock::before {
+    background-image: url('../images/clock.png');
+    background-size: 70px 70px;
+}
+.diagram::before {
+    background-image: url('../images/diagram.png');
+    background-size: 70px 70px;
+}
+.astronaut::before {
+    background-image: url('../images/astronaut.png');
+    background-size: 70px 70px;
+}
 .subtitle {
     color: var(--primary-text-color);
     font-weight: 700;
@@ -255,6 +289,7 @@ a:link {
 }
 .work-list .item +.item {
     margin-left: 30px;
+
    
 }
 .team-list {
@@ -291,14 +326,22 @@ a:link {
 .img {
     background-color: var(--primary-bgc-color);
     width: 270px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .img +.img {
     margin-left: 30px;
 }
+
 .team-box {
     padding-bottom: 30px;
     padding-top: 30px;
 
+}
+.section-clients {
+    padding-top: 94px;
+    padding-bottom: 100px;
 }
 /* footer */
 .footer {
@@ -419,7 +462,9 @@ a:link {
     border: 1px solid #eee;
     padding: 20px 24px;
 }
-
+.port-list .item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .port-subtitle {
     margin-bottom: 4px;
     color: var(--primary-text-color);
