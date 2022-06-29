@@ -240,20 +240,20 @@ a:link {
     background-color: var(--section-bgc-color);
 
 }
-.antenna::before {
-    background-image: url('../images/antenna.png');
+.icon-antenna::before {
+    background-image: url('../images/antenna.svg');
     background-size: 70px 70px;
 }
-.clock::before {
-    background-image: url('../images/clock.png');
+.icon-clock::before {
+    background-image: url('../images/clock.svg');
     background-size: 70px 70px;
 }
-.diagram::before {
-    background-image: url('../images/diagram.png');
+.icon-diagram::before {
+    background-image: url('../images/diagram.svg');
     background-size: 70px 70px;
 }
-.astronaut::before {
-    background-image: url('../images/astronaut.png');
+.icon-astronaut::before {
+    background-image: url('../images/astronaut.svg');
     background-size: 70px 70px;
 }
 .subtitle {
@@ -347,7 +347,15 @@ a:link {
 .footer {
     margin: 0;
 }
+.footer-box {
+    display: flex;
+    align-items: baseline;
+}
+.footer-box-sl {
+    margin-left: 70px;
+}
 .address {
+    
     margin: 0;
     background-color:var(--main-footers-bgc-color);
     padding-top: 60px;
@@ -384,10 +392,72 @@ a:link {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;    
 }
+.footer-stitle {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 
+    color: var(--footer-text-color);
+    margin-bottom: 20px;
+}
+.social-list {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-icon::before {
+    display: block;
+    content: '';
+    
+    height: 44px;
+    width: 44px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--footer-text-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50% 50%;
+}
+
+.instagram::before {
+    background-size: 20px 20px;
+    background-image: url('../images/instagram.svg');
+    
+
+}
+.instagram:hover::before {
+    background-color: var(--accent-color);
+}
+.twitter::before {
+    background-size: 20px 20px;
+    background-image: url('../images/twitter.svg');
+}
+
+.twitter:hover::before {
+    background-color: var(--accent-color);
+}
+.facebook::before {
+    background-size: 20px 20px;
+    background-image: url('../images/facebook.svg');
+}
+
+.facebook:hover::before {
+    background-color: var(--accent-color);
+}
+.linkedin::before {
+    background-size: 20px 20px;
+    background-image: url('../images/linkedin.svg');
+}
+
+.linkedin:hover::before {
+    background-color: var(--accent-color);
+}
 /* portfolio */
 .section-portfolio {
     
