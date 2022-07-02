@@ -476,10 +476,7 @@ a:link {
     color: var(--footer-text-color);
     margin-bottom: 20px;
 }
-.social-list {
-    display: flex;
-    gap: 10px;
-}
+
 .sl-icon-footer {
     fill: var(--footer-text-color);
 }
