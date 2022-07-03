@@ -124,9 +124,12 @@ a:link {
     width: 16px;
     height: 12px;
 }
-.header-contacts .item-icon.mail:hover,
-.header-contacts .item:focus{
+.header-contacts .item:hover {
     fill: var(--accent-color);
+}
+.header-contacts .item a svg:focus {
+    fill: var(--accent-color);
+
 }
 .header-contacts {
     display: flex;
@@ -150,7 +153,7 @@ a:link {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.header-contacts a:hover, .item-icon:hover,
+.header-contacts a:hover,
 .header-contacts a:focus {
     color: var(--accent-color);
 }
@@ -166,6 +169,7 @@ a:link {
    padding-top: 200px;
    padding-bottom: 200px;
    max-width: 1600px;
+   max-height: 600px;
 
    background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)),
    url('../images/hero-bg-img.jpg');
@@ -375,14 +379,19 @@ a:link {
         gap: 10px;
         border-radius: 50% 50%;
 }
-.sl-team .sl-icon:hover {
-    fill: var(--footer-text-color);
-    
-}
 .sl-team:hover {
     background-color: var(--accent-color);
-    
 }
+.sl-team:focus {
+    background-color: var(--accent-color);
+}
+.sl-team:hover .sl-icon {
+    fill: var(--footer-text-color);
+}
+.sl-team:focus .sl-icon {
+    fill: var(--footer-text-color);
+}
+
 .client-title {
     margin-bottom: 50px;
 }
@@ -398,22 +407,31 @@ a:link {
 }
 .client-item {
     justify-content: center;
-    padding: 16px 32px;
+    /* padding: 16px 32px; */
     fill: var(--icon-color);
     border: 1px solid var(--icon-color);
+    cursor: pointer;
     
 }
 .client-icon {
-    width: 106px;
-    height: 60px;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
     fill: var(--icon-color);
+    
 }
 
-.client-item .client-icon:hover,.client-icon:focus {
-    fill: var(--accent-color);
-}
-.client-item:hover,.client-item:focus {
+.client-list .client-item:hover {
     border: 1px solid var(--accent-color);
+}
+
+.client-list .client-item:hover a .client-icon {
+    fill: var(--accent-color)
+}
+
+.client-list .client-item a:focus .client-icon {
+    fill: var(--accent-color);
+    
 }
 
 /* footer */
@@ -479,9 +497,25 @@ a:link {
     color: var(--footer-text-color);
     margin-bottom: 20px;
 }
-
+.sl-footer {
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+           
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 50% 50%;
+}
+.sl-footer:hover {
+    background-color: var(--accent-color);
+}
 .sl-icon-footer {
     fill: var(--footer-text-color);
+        
 }
 
 /* portfolio */
