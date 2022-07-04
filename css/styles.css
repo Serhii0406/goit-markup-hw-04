@@ -127,7 +127,7 @@ a:link {
 .header-contacts .item:hover {
     fill: var(--accent-color);
 }
-.header-contacts .item a svg:focus {
+.header-contacts .item a:focus svg {
     fill: var(--accent-color);
 
 }
@@ -254,18 +254,15 @@ a:link {
 }
 .description-item {
     display: block;
-   
+    width: 270px;
     margin-bottom: 30px;
     
 }
-.description-icon-list {
-    display: flex;
-    gap: 30px;
-    
-}
+
 .benefit {
     padding: 25px 100px;
     gap: 30px;
+    border-radius: 4px;
     margin-bottom: 30px;
     background-color: var(--sec-studio-btn-bgc);
 
@@ -407,21 +404,31 @@ a:link {
 }
 .client-item {
     justify-content: center;
-    /* padding: 16px 32px; */
+    border-radius: 4px;
     fill: var(--icon-color);
-    border: 1px solid var(--icon-color);
+    
     cursor: pointer;
     
 }
-.client-icon {
+.client-link {
+    box-sizing: border-box;
+    display: flex;
     width: 170px;
     height: 92px;
-    padding: 16px 32px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid var(--icon-color);
+    cursor: pointer;
+}
+.client-icon {
+    width: 106px;
+    height: 60px;
     fill: var(--icon-color);
     
 }
 
-.client-list .client-item:hover {
+.client-list .client-link:hover {
     border: 1px solid var(--accent-color);
 }
 
@@ -511,6 +518,9 @@ a:link {
     border-radius: 50% 50%;
 }
 .sl-footer:hover {
+    background-color: var(--accent-color);
+}
+.sl-footer:focus {
     background-color: var(--accent-color);
 }
 .sl-icon-footer {
